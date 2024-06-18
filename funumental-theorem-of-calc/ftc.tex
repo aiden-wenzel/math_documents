@@ -34,7 +34,26 @@ By the definition of a derivative, and the definition of \(F(x)\) given in the t
 
 \[f_{avg} = \frac{1}{b-a} \int_b^a f(x)dx\]
 
+By the Average Value Theorem, there is some constant real number $c$ on the interval \([x, x+h]\) such that
 
+\[\frac{1}{h} \int_x^{x+h} f(t)dt = f(c)\]
+
+Since $c$ is between $x$ and $h$, $c$ approahes $x$ as $h$ approaches zero. 
+
+\[\lim_{h \to 0}{f(c) = \lim_{c \to x}{f(c) = f(x)}}\]
+
+Finally, we can complete our proof
+\begin{equation}
+\begin{split}
+    F'(x) &= \lim_{h \to 0}{\frac{1}{h} \int_x^{x+h} f(t)dt} \\
+          &= \lim_{h \to 0}{f(c)} \\
+    F'(x) &= f(x),
+\end{split}
+\end{equation}
+
+The proof is now complete.
+
+\section{The Second Fundamental Theorem of Calculus}
 
 
 \end{document}
